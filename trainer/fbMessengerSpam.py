@@ -6,8 +6,8 @@ username = 'joefredgreenwood'
 client = fbchat.Client(username, getpass())
 no_of_friends = int(input('number of friends'))
 messages=[]
-f = open('beemoviescript.txt', 'r')
-for x in f:
+para = open('beemoviescript.txt', 'r')
+for x in para:
     word = x.split()
     for msg in word:
         messages.append(msg)
