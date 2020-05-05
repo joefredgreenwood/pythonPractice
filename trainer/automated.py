@@ -1,4 +1,5 @@
 import fbchat
+import time
 from fbchat import Client
 from getpass import getpass
 username = 'joefredgreenwood'
@@ -16,5 +17,8 @@ for i in range(no_of_friends):
     friend = friends[0]
     for mesg in messages:            
         sent = client.send(fbchat.models.Message(mesg),friend.uid)
+        time.sleep(4)
     if sent:
         print('msg go go go')
+        
+        
