@@ -5,6 +5,9 @@ import xlsxwriter
 workbook = xlsxwriter.Workbook('softwareJobs.xlsx')
 worksheet = workbook.add_worksheet('jobs1')
 bold = workbook.add_format({'bold': True})
+worksheet.set_column('B:B',30)
+worksheet.set_column('A:A',30)
+worksheet.set_column('C:C',30)
 
 
 row = 1
